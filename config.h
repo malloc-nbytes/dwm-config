@@ -3,6 +3,7 @@
 #define UBUNTU_MONO "Ubuntu Mono:size="
 
 /* appearance */
+int refreshrate = 60;
 static const unsigned gappx = 5;
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 8;        /* snap pixel */
@@ -78,17 +79,16 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,            {.v = discordcmd } },
 	{ MODKEY,                       XK_s,      spawn,            {.v = steamcmd } },
 	{ MODKEY,                       XK_b,      togglebar,        {0} },
-	{ MODKEY,                       XK_j,      focusstackvis,    {.i = -1 } },
-	{ MODKEY,                       XK_k,      focusstackvis,    {.i = +1 } },
+	//{ MODKEY,                       XK_j,      focusstackvis,    {.i = -1 } },
+	//{ MODKEY,                       XK_k,      focusstackvis,    {.i = +1 } },
 	{ MODKEY,                       XK_comma,  setmfact,         {.f = -0.05} },
 	{ MODKEY,                       XK_period, setmfact,         {.f = +0.05} },
 	{ MODKEY,                       XK_h,      focusmon,         {.i = -1 } },
 	{ MODKEY,                       XK_l,      focusmon,         {.i = +1 } },
 
-        { MODKEY,                       XK_minus,  scratchpad_show,  {0} },
-        { MODKEY|ShiftMask,             XK_minus,  scratchpad_hide,  {0} },
-        { MODKEY,                       XK_equal,  scratchpad_remove,{0} },
-	//{ MODKEY,                       XK_space,  zoom,             {0} },
+        //{ MODKEY,                       XK_minus,  scratchpad_show,  {0} },
+        //{ MODKEY|ShiftMask,             XK_minus,  scratchpad_hide,  {0} },
+        //{ MODKEY,                       XK_equal,  scratchpad_remove,{0} },
 	{ MODKEY,                       XK_o,      zoom,             {0} },
 	{ MODKEY,                       XK_z,      killclient,       {0} },
 	{ MODKEY,                       XK_t,      setlayout,        {.v = &layouts[0]} },
